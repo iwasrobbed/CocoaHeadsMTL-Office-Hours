@@ -8,6 +8,10 @@ class ApplicationController < ActionController::Base
   def index
   end
   
+  def ping_me
+    head :ok
+  end
+  
   def next_event
     next_meeting = Event.current
     if next_meeting
