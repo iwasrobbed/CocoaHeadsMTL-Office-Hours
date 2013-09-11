@@ -4,6 +4,9 @@ ruby '2.0.0'
 # Use Redis as a data store
 gem 'redis'
 
+# Add NewRelic to prevent idling
+gem 'newrelic_rpm'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
