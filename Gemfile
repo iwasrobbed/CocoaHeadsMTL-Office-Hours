@@ -20,6 +20,9 @@ gem 'haml'
 gem 'haml-rails'
 gem 'erb2haml'
 
+#  Twitter integration
+gem 'twitter'
+
 group :production do
   # Used for Heroku to have STDOUT logging and to setup asset pipeline
   gem 'rails_12factor'
