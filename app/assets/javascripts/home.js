@@ -9,10 +9,10 @@ $(document).ready(function() {
 
   $.getJSON("/attendings",function(users) {
 	  if (typeof users !== 'undefined' && users.length > 0) {
-			var user_list_template = '<% _.each(list, function(user){ %> <div class="span1">'+
+			var user_list_template = '<% _.each(list, function(user){ %> <div class="span2 text-center">'+
 	                                                          '<a href="<%= user.url %>">'+
 	                                                            '<img src="<%= user.avatar %>" class="img-circle" />'+
-	                                                            '<%= user.username %>'+
+	                                                            '<p><%= user.username %></p>'+
 	                                                          '</a>'+
 	                                                        '</div> <% } )%>' 
 
