@@ -28,7 +28,7 @@ class ApplicationController < ActionController::Base
   end
 
   def github_auth
-    url = client.auth_code.authorize_url(:redirect_uri => redirect_uri, :scope => 'user')
+    url = client.auth_code.authorize_url(:redirect_uri => redirect_uri, :scope => '')
     puts "Redirecting to URL: #{url.inspect}"
     redirect_to url
   end
